@@ -1,0 +1,15 @@
+# Base versions - install first; then pip freeze to pin after everything runs
+fastapi
+uvicorn[standard]
+python-multipart
+pydantic
+pydantic-settings
+geopy
+
+# Database - PostgreSQL (SQLAlchemy uses psycopg2 to connect)
+psycopg2-binary
+sqlalchemy
+geoalchemy2
+
+# Elasticsearch (imported at startup; optional at runtime)
+elasticsearch

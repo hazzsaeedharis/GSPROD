@@ -1,0 +1,196 @@
+/* Custom Icon Styles for Business Detail Page */
+
+/* Icon base styles */
+.icon-telefon,
+.icon-email,
+.icon-homepage,
+.icon-route_finden,
+.icon-termin,
+.icon-clock,
+.icon-clock-green {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* Action button icons */
+.icon-telefon {
+  background-image: url('/assets/gsbiz/images/ic-telefon.svg');
+  width: 24px;
+  height: 24px;
+}
+
+.icon-email {
+  background-image: url('/assets/gsbiz/images/ic-email.svg');
+  width: 24px;
+  height: 24px;
+}
+
+.icon-homepage {
+  background-image: url('/assets/gsbiz/images/ic-webseite.svg');
+  width: 24px;
+  height: 24px;
+}
+
+.icon-route_finden {
+  background-image: url('/assets/gsbiz/images/ic-anfahrt.svg');
+  width: 24px;
+  height: 24px;
+}
+
+.icon-termin {
+  background-image: url('/assets/gsbiz/images/ic-reserve.svg');
+  width: 24px;
+  height: 24px;
+}
+
+.icon-termin.inactive {
+  opacity: 0.4;
+  background-image: url('/assets/gsbiz/images/ic-reserve-grey.svg');
+}
+
+/* Opening hours icons */
+.icon-clock {
+  background-image: url('/assets/gsbiz/images/ic-clock.svg');
+  width: 20px;
+  height: 20px;
+}
+
+.icon-clock-green {
+  background-image: url('/assets/gsbiz/images/ic-clock-green.svg');
+  width: 20px;
+  height: 20px;
+}
+
+/* Contact detail icons - Disable pseudo-elements as we use img tags in JSX */
+.contains-icon-big-adresse::before {
+  display: none;
+}
+
+.contains-icon-big-tel::before {
+  display: none;
+}
+
+.contains-icon-big-homepage::before {
+  display: none;
+}
+
+.contains-icon-big-bahnurl::before {
+  display: none;
+}
+
+/* Helper class to force remove pseudo-elements */
+.no-icon-pseudo::before,
+.no-icon-pseudo::after {
+  content: none !important;
+  display: none !important;
+  background: none !important;
+  width: 0 !important;
+  height: 0 !important;
+}
+
+/* Address icon in header */
+.mod-TeilnehmerKopf__adresse-icon-container {
+  width: 20px;
+  height: 20px;
+  background-image: url('/assets/gsbiz/images/ic-adresse.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  flex-shrink: 0;
+}
+
+/* Hide the pseudo-element for the header address icon to prevent double icons */
+.mod-TeilnehmerKopf__adresse-icon-container::before {
+  display: none !important;
+}
+
+/* Opening hours icon in header */
+.mod-TeilnehmerKopf__oeffnungszeiten-icon-container {
+  width: 20px;
+  height: 20px;
+  background-image: url('/assets/gsbiz/images/ic-uhr.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  flex-shrink: 0;
+}
+
+/* Opening status colors */
+.offen {
+  color: #4caf50;
+  font-weight: 600;
+}
+
+.geschlossen {
+  color: #d32f2f;
+  font-weight: 600;
+}
+
+/* Payment method icon */
+.contains-icon-rechnung::before {
+  content: '';
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-image: url('/assets/gsbiz/images/ic-payment-rechnung.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+/* Button hover effects */
+.aktionsleiste-button .button:hover i,
+.aktionsleiste-button a.button:hover i {
+  transform: scale(1.1);
+  transition: transform 0.2s;
+}
+
+/* Icon for reservieren button */
+.button.termin {
+  cursor: not-allowed;
+}
+
+.button.termin.inactive {
+  opacity: 0.5;
+}
+
+/* Map styling */
+.mod-KarteImage {
+  width: 100%;
+  min-height: 210px;
+  background-color: #e0e0e0;
+  position: relative;
+  overflow: hidden;
+}
+
+.mod-KarteImage iframe {
+  width: 100%;
+  height: 300px;
+  border: 0;
+  display: block;
+}
+
+@media (min-width: 768px) {
+  .mod-KarteImage {
+    min-height: 210px;
+  }
+}
+
+@media (min-width: 991px) {
+  .mod-KarteImage {
+    min-height: 210px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .mod-KarteImage {
+    min-height: 362px;
+  }
+
+  .mod-KarteImage iframe {
+    height: 362px;
+  }
+}

@@ -5,9 +5,7 @@
 ```
 GSPROD/
 ├── backend/          # FastAPI backend (Python)
-├── frontend/         # Next.js frontend (TypeScript/React)
-├── data/             # Business data
-└── gsbiz/            # Static assets
+└── frontend/         # Next.js frontend (TypeScript/React)
 ```
 
 ## 🏃 How to Run the Project

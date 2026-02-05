@@ -28,9 +28,10 @@ GSPROD/
 │   ├── package.json      # Node dependencies
 │   └── next.config.js    # Next.js config
 │
-├── data/                 # Business data (JSON)
-├── gsbiz/                # Original static assets
-└── public/               # Shared public assets
+├── README.md             # Main documentation
+├── QUICK_START.md        # Quick start guide
+├── PROJECT_STRUCTURE.md  # This file
+└── DEPLOYMENT.md         # Deployment instructions
 ```
 
 ## Environment Variables

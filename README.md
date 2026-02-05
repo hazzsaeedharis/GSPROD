@@ -16,8 +16,6 @@ This project is a complete rebuild of the Gelbe Seiten business directory, featu
 GSPROD/
 ├── backend/          # FastAPI backend service (port 8000)
 ├── frontend/         # Next.js frontend application (port 3000)
-├── data/             # Business data (JSON)
-├── gsbiz/            # Original HTML/CSS/JS assets
 └── README.md         # This file
 ```
 
